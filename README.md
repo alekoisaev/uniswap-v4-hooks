@@ -1,66 +1,35 @@
-## Foundry
+![Captain Hook](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*pyGIlCX_v1CumaAEaMqR1A.png)
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# Captain Hook: Updated Uniswap Hooks Tutorial
 
-Foundry consists of:
+Text in guide is depreceated. Uniswap V4 have many changes.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Intro
 
-## Documentation
+Welcome to our Uniswap V4 Hooks Guide repo! This repository is complementary to a series of tutorials to help developers gain a clear understanding of hooks within the Uniswap V4 protocol.
 
-https://book.getfoundry.sh/
+This repository will contain 3 different proofs of concept, accompanied by a tutorial blog post. To get the most out of it, we recommend following the corresponding tutorials:
 
-## Usage
+| Proof of Concept     | Tutorial Link                                                                                                                      |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| RBAC                 | [RBAC PoC](https://medium.com/@umbrellaresearch/uniswap-v4-hooks-a-deep-dive-with-captain-hook-i-6be5d1677539)                     |
+| Dynamic Fees         | [Dynamic Fees PoC](https://medium.com/@umbrellaresearch/uniswap-v4-hooks-a-deep-dive-with-captain-hook-ii-44b0efc84e45)            |
+| Liquidity Incentives | [Liquidity Incentives PoC](https://medium.com/@umbrellaresearch/uniswap-v4-hooks-guide-iii-liquidity-incentives-hook-29d77fead79d) |
 
-### Build
+## Install
 
-```shell
-$ forge build
-```
-
-### Test
+To set up the project for development, you'll need to run the following command:
 
 ```shell
-$ forge test
+forge install
 ```
 
-### Format
+## Test
+
+Once you've installed the project, you can run the test suite using:
 
 ```shell
-$ forge fmt
+forge test
 ```
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This will execute all the tests defined in the test suite and output the results.
