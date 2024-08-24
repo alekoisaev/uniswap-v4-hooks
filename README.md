@@ -2,7 +2,8 @@
 
 # Captain Hook: Updated Uniswap Hooks Tutorial
 
-Text in guide is depreceated. Uniswap V4 have many changes.
+TODO: tests need to be re-write.
+Guides below are no more actual. Uniswap V4 have many changes.
 
 ## Intro
 
